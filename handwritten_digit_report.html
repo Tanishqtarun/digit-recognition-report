@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handwritten Digit Recognition Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; color: #333; }
+    h1, h2, h3 { color: #2c3e50; }
+    .section { margin-bottom: 40px; }
+    .authors { font-style: italic; margin-bottom: 20px; }
+    .results-table { border-collapse: collapse; width: 100%; }
+    .results-table th, .results-table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    .results-table th { background-color: #eee; }
+  </style>
+</head>
+<body>
+  <h1>Handwritten Digit Recognition Project Report</h1>
+  <p class="authors">By Tanishq, Adwith, Srijith, Venu, Srikar, Arjun</p>
+
+  <div class="section">
+    <h2>Abstract</h2>
+    <p>This report explores various machine learning models for handwritten digit recognition using the MNIST dataset. We evaluate Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Gaussian Naive Bayes, Linear Regression, and Decision Tree based on accuracy and interpretability. The goal is to compare their strengths and weaknesses and guide future improvements.</p>
+  </div>
+
+  <div class="section">
+    <h2>Dataset Description</h2>
+    <p>We used the MNIST dataset, consisting of 70,000 labeled 28x28 grayscale digit images (0–9):</p>
+    <ul>
+      <li>Used a subset of 10,000 balanced samples</li>
+      <li>Normalized pixel values to [0, 1]</li>
+      <li>80-20 split: 8,000 for training and 2,000 for testing</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Models Used & How They Work</h2>
+
+    <h3>1. Support Vector Machine (SVM)</h3>
+    <p>Uses hyperplanes in high-dimensional space to separate digit classes. The RBF kernel helps handle non-linear data.</p>
+
+    <h3>2. K-Nearest Neighbors (KNN)</h3>
+    <p>Classifies digits by majority vote among the 'k' closest training examples in feature space.</p>
+
+    <h3>3. Gaussian Naive Bayes</h3>
+    <p>Assumes features are normally distributed and independent. Fast and simple, but can underperform on complex datasets.</p>
+
+    <h3>4. Linear Regression</h3>
+    <p>Applies regression to classify digits by predicting continuous values and selecting the closest class.</p>
+
+    <h3>5. Decision Tree</h3>
+    <p>Builds a flowchart-like structure to make decisions based on feature thresholds. Easy to interpret but may overfit.</p>
+  </div>
+
+  <div class="section">
+    <h2>Results Summary</h2>
+    <table class="results-table">
+      <thead>
+        <tr><th>Model</th><th>Accuracy (%)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>SVM</td><td>93.7</td></tr>
+        <tr><td>KNN</td><td>91.2</td></tr>
+        <tr><td>Naive Bayes</td><td>83.5</td></tr>
+        <tr><td>Linear Regression</td><td>78.4</td></tr>
+        <tr><td>Decision Tree</td><td>88.1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
