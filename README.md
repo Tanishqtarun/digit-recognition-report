@@ -93,3 +93,20 @@ Each model was trained and evaluated on a subset of the MNIST dataset. We compar
 
 ## 📁 Project Structure (Suggestion)
 
+├── data/ │ └── mnist_subset.csv ├── models/ │ ├── svm_model.py │ ├── knn_model.py │ └── ... ├── results/ │ └── accuracy_report.csv ├── main.py └── README.md
+
+
+---
+
+## 📌 Dependencies
+
+- Python 3.x
+- NumPy
+- scikit-learn
+- pandas
+- matplotlib (optional, for visualization)
+
+Install dependencies:
+
+```bash
+pip install numpy pandas scikit-learn matplotlib
